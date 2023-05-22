@@ -1,0 +1,809 @@
+body {
+    font-family: 'Public Sans', sans-serif;
+    /* margin:0 100px; */
+    margin: 0;
+    padding: 0;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: auto;
+    height: 80px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-list {
+    list-style: none;
+    display: flex;
+    padding-top: 15px;
+    padding-right: 10rem;
+}
+
+.menu-list-items {
+    margin: 0 20px 0 20px;
+    font-weight: 400;
+    color: hsl(233, 8%, 62%);
+    font-size: 15px;
+}
+
+.menu-list-items:hover {
+    color: hsl(233, 26%, 24%);
+    cursor: pointer;
+}
+
+.logo-image {
+    padding-top: 5px;
+}
+
+
+.request-button-button {
+    color: hsl(220, 16%, 96%);
+    border: none;
+    font-size: 14px;
+    height: 40px;
+    border-radius: 20px;
+    width: 130px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+   
+}
+
+.request-button-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px hsl(233, 19%, 51%);
+}
+
+/* intro section */
+
+#mockup-image {
+    width: 600px;
+    padding-left: 180px;
+    padding-bottom: 0;
+    padding-top: 50px;
+}
+
+#bg-intro {
+    width: 200px;
+    height: 200px;
+}
+
+.intro-section {
+    display: flex;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.intro-section-text {
+    margin: 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-section-image {
+    margin-left: 20px;
+}
+
+#intro-section-text-heading {
+    font-size: 50px;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    padding-bottom: 30px;
+}
+
+
+#mockup-image-div {
+    display: block;
+    justify-content: center;
+    background-image: url(/src/images/bg-intro-desktop.svg);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+}
+
+#intro-section-text-para {
+    color: hsl(233, 8%, 62%);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Why choose EB section */
+
+
+.choose-easybank-main {
+    background-color: hsl(220, 16%, 96%);
+    padding: 0 150px;
+}
+
+.whyChooseEB-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 18;
+    margin-right: 15px;
+}
+
+#whyChooseEB-card-title {
+    font-size: 25px;
+    color: hsl(233, 26%, 24%);
+    padding: 25px 0;
+}
+
+#whyChooseEB-card-description {
+    color: hsl(233, 8%, 62%);
+    font-size: 16px;
+}
+
+.choose-easybank-main-cards {
+    display: flex;
+    padding: 60px 0 100px 0;
+}
+
+.main-title {
+    font-size: 40px;
+    color: hsl(233, 26%, 24%);
+    padding: 50px 0 40px 0;
+    font-weight: 300;
+}
+
+.choose-easybank-main-description {
+    color: hsl(233, 8%, 62%);
+    font-size: 18px;
+}
+
+/* Latest Articles */
+
+.latest-articles-main {
+    background-color: hsl(0, 0%, 98%);
+    padding: 0 150px 50px 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.latest-articles-main-cards {
+    display: flex;
+}
+
+.card-img-top {
+    height: 150px;
+}
+
+.latest-articles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 15px;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+}
+
+.latest-articles:hover {
+    box-shadow: 0 0 10px hsl(192, 70%, 51%);
+    cursor: pointer;
+}
+
+.latest-articles-text-name {
+    padding-bottom: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    color: hsl(233, 8%, 62%);
+}
+
+.latest-articles-text-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+}
+
+.latest-articles-text-description {
+    padding-top: 10px;
+    font-size: 16px;
+    color: hsl(233, 8%, 62%);
+    font-weight: 300;
+}
+
+.latest-articles-text {
+    padding: 20px 25px 20px 20px;
+}
+
+#article-image {
+    width: 250px;
+    height: 150px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: hsl(233, 26%, 24%);
+    color: hsl(0, 0%, 98%);
+    padding: 50px 150px 50px 150px;
+    display: flex;
+}
+
+.links-text {
+    display: flex;
+    margin: 0 150px;
+}
+
+.links-text-block {
+    margin: 0 40px;
+    color: hsl(233, 8%, 62%);
+}
+
+.links-text-block-items:hover {
+    color: hsl(0, 0%, 98%);
+    cursor: pointer;
+}
+
+.social-media-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.social-media-logos-connect {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-logo-image {
+    margin-right: 10px;
+}
+
+.social-media-logo-image:hover {
+    cursor: pointer;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: hsl(233, 8%, 62%);
+}
+
+@media screen and (max-width:1290px) {
+
+
+    /* Footer */
+    .links-text {
+        display: flex;
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width:1210px) {
+
+
+    .latest-articles-text-description{
+        font-size: 12px;
+    }
+
+    .latest-articles-text-title{
+        font-size: 15px;
+    }
+
+    .card-img-top{
+        width: 200px;
+    }
+
+    .latest-articles{
+        width: 200px;
+    }
+
+    #mockup-image {
+        width: 500px;
+        padding-left: 180px;
+        padding-bottom: 0;
+        padding-top: 50px;
+    }
+
+    #whyChooseEB-card-title{
+        font-size: 21px;
+    }
+
+    #whyChooseEB-card-description{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1060px) {
+
+    /* Intro Section */
+    #mockup-image {
+        width: 500px;
+        padding-left: 180px;
+        padding-bottom: 0;
+        padding-top: 50px;
+    }
+
+    .intro-section-text {
+        margin: 0 100px 0 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro-section-image {
+        margin-left: 0px;
+    }
+
+    #intro-section-text-heading {
+        font-size: 50px;
+        font-weight: 400;
+        color: hsl(233, 26%, 24%);
+        padding-bottom: 20px;
+    }
+
+    #intro-section-text-para {
+        color: hsl(233, 8%, 62%);
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    .intro-section-button {
+        padding-bottom: 50px;
+    }
+
+    /* Articles ection */
+
+    .latest-articles-main {
+        background-color: hsl(0, 0%, 98%);
+        padding: 0 150px 50px 100px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .latest-articles {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 200px;
+        border-radius: 10px;
+        margin-right: 15px;
+        background-color: hsl(0, 0%, 100%);
+        border: none;
+    }
+
+    .latest-articles-text-title {
+        font-size: 15px;
+        font-weight: 400;
+        color: hsl(233, 26%, 24%);
+    }
+
+    .latest-articles-text-description {
+        padding-top: 10px;
+        font-size: 13px;
+        color: hsl(233, 8%, 62%);
+        font-weight: 300;
+    }
+
+    /* footer */
+    .links-text {
+        display: flex;
+        margin: 0 60px;
+
+    }
+
+    .links-text-block {
+        margin: 0 40px;
+        color: hsl(233, 8%, 62%);
+
+    }
+
+    .footer {
+        background-color: hsl(233, 26%, 24%);
+        color: hsl(0, 0%, 98%);
+        padding: 50px 100px;
+        display: flex;
+        font-size: 14px;
+    }
+
+    /* .links-text-block-items{
+        font-size: 16px;
+    } */
+
+    /* Ehy choose EB */
+
+
+    .choose-easybank-main {
+        background-color: hsl(220, 16%, 96%);
+        padding: 0 100px;
+    }
+
+    #whyChooseEB-card-title {
+        font-size: 20px;
+        color: hsl(233, 26%, 24%);
+        padding: 20px 0;
+    }
+
+    #whyChooseEB-card-description {
+        color: hsl(233, 8%, 62%);
+        font-size: 14px;
+    }
+
+    .whyChooseEB-card {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        font-size: 18;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+
+    /* Footer */
+    .links-text {
+        display: flex;
+        margin: 0 40px;
+    }
+}
+
+@media screen and (max-width:960px) {
+
+
+    .latest-articles-main-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mockup-image {
+        width: 300px;
+        padding-left: 0px;
+        padding-bottom: 0;
+        padding-top: 50px;
+    }
+
+    #mockup-image-div {
+        display: block;
+        justify-content: center;
+        background-image: url(/src/images/bg-intro-desktop.svg);
+        background-size: 550px;
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: bottom;
+    }
+
+    .latest-articles {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 200px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .latest-articles-main-title {
+        text-align: center;
+    }
+
+    .links-text {
+        display: flex;
+        margin: 0 20px;
+    }
+
+    #whyChooseEB-card-title {
+        font-size: 18px;
+        color: hsl(233, 26%, 24%);
+        padding: 20px 0;
+    }
+
+    #whyChooseEB-card-description {
+        color: hsl(233, 8%, 62%);
+        font-size: 12px;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: hsl(233, 8%, 62%);
+    }
+}
+
+@media screen and (max-width:921px) {
+    .links-text {
+        display: flex;
+        margin: 0 0px;
+
+    }
+
+    .links-text-block {
+        margin: 0 30px;
+        color: hsl(233, 8%, 62%);
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-block {
+        padding: 30px 0;
+    }
+
+    .social-media-logos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .social-media-logo-image {
+        margin: 0 20px;
+    }
+
+    .social-media-logos-connect {
+        margin-top: 20px;
+    }
+
+    #copyright-text {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .choose-easybank-main-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .choose-easybank-main {
+        text-align: center;
+    }
+
+    .choose-easybank-main-description {
+        font-size: 16px;
+    }
+
+    .whyChooseEB-card {
+        margin: 30px 0;
+    }
+
+    .choose-easybank-main-cards {
+        padding: 30px 0 30px 0;
+    }
+
+
+    .links-text {
+        display: flex;
+    }
+
+    .links-text-block {
+        margin: 0 30px;
+        color: hsl(233, 8%, 62%);
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .footer-block {
+        padding: 30px 0;
+    }
+
+    .social-media-logos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .social-media-logo-image {
+        margin: 0 20px;
+    }
+
+    .social-media-logos-connect {
+        margin-top: 20px;
+    }
+
+    #copyright-text {
+        margin-top: 20px;
+    }
+
+    .intro-section-text {
+        margin: 0 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #menu-list{
+        display: flex;
+    }
+
+   
+    .menu.open{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    
+    .hamburger-menu-list{
+        border: 2px solid green;
+    }
+    
+    .navbar{
+        display:flex;
+    }
+
+    #menu-list{
+        padding: 8px 0 0 0;
+        position: absolute;
+        display: block;
+    }
+
+    .menu-list-items {
+        border-bottom: 1px solid hsl(136, 65%, 51%);
+        font-weight: 400;
+        color: hsl(233, 8%, 62%);
+        font-size: 12px;
+        padding:10px;
+        margin: 0;
+        width: 25vw;
+        text-align: center;
+        color: hsl(233, 26%, 24%);
+        background-color: hsl(232, 24%, 81%);
+    }
+
+    .menu-list-items:hover{
+        background-color:hsl(233, 26%, 24%) ;
+        color:hsl(232, 24%, 81%) ;
+    }
+
+    .hamburger-menu {
+        /* padding-top: 20px; */
+        display: flex;
+        position: relative;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    .navbar-button {
+        display: none;
+    }
+
+    .intro-section {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: hsl(0, 0%, 98%);
+    }
+
+    #mockup-image-div {
+        display: block;
+        justify-content: center;
+        background-image: none;
+    }
+
+    .latest-articles-main {
+        background-color: hsl(0, 0%, 98%);
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:470px) {
+    body {
+        text-align: center;
+    }
+
+    .links-text {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+    body {
+        text-align: center;
+    }
+
+    .links-text {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .choose-easybank-main {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
